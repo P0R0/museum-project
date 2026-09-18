@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>빗살무늬 토기 복원</title>
+
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <header class="game-header">
+
+        <a href="index.html" class="back-button">
+            ← 박물관으로 돌아가기
+        </a>
+
+        <h1>고고학 복원실</h1>
+
+    </header>
+
+
+    <main class="game">
+
+        <div class="game-title">
+
+            <p>NEOLITHIC AGE</p>
+
+            <h2>빗살무늬 토기 복원하기</h2>
+
+            <p>
+                흩어진 토기 조각을 올바른 위치에 맞춰
+                유물을 복원해 보세요.
+            </p>
+
+        </div>
+
+
+        <!-- 퍼즐 -->
+        <div id="puzzle" class="puzzle">
+
+            <button class="piece">1</button>
+            <button class="piece">2</button>
+            <button class="piece">3</button>
+
+            <button class="piece">4</button>
+            <button class="piece">5</button>
+            <button class="piece">6</button>
+
+            <button class="piece">7</button>
+            <button class="piece">8</button>
+            <button class="piece">9</button>
+
+        </div>
+
+
+        <button id="check-puzzle" class="check-button">
+            복원 완료 확인
+        </button>
+
+
+        <p id="game-message"></p>
+
+
+        <!-- 성공했을 때 나타나는 영역 -->
+        <div id="success" class="success hidden">
+
+            <p>EXHIBITION UNLOCKED</p>
+
+            <h2>🏺 복원 성공!</h2>
+
+            <p>
+                빗살무늬 토기의 전시품이 해금되었습니다.
+            </p>
+
+            <a href="index.html" class="museum-button">
+                박물관으로 돌아가기
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="game-pottery.js"></script>
+
+</body>
+</html>

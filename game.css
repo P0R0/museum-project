@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #25231f;
+    color: white;
+
+    min-height: 100vh;
+}
+
+.game-header {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px;
+
+    border-bottom: 1px solid #444;
+}
+
+.game-header h1 {
+    margin: auto;
+
+    font-size: 22px;
+}
+
+.back-button {
+    color: #d2a85a;
+    text-decoration: none;
+}
+
+.game {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.game-title p:first-child {
+    color: #d2a85a;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+}
+
+.game-title h2 {
+    font-size: 42px;
+
+    margin: 15px 0;
+}
+
+.game-title p:last-child {
+    color: #aaa;
+}
+
+
+.puzzle {
+    width: 420px;
+    height: 420px;
+
+    margin: 50px auto 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 5px;
+
+    background-color: #111;
+
+    padding: 5px;
+}
+
+.piece {
+    border: none;
+
+    background-color: #b8945a;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.piece:hover {
+    background-color: #d2a85a;
+}
+
+
+.check-button {
+    padding: 14px 30px;
+
+    border: none;
+
+    background-color: #d2a85a;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+#game-message {
+    margin-top: 20px;
+}
+
+
+.success {
+    margin-top: 50px;
+
+    padding: 40px;
+
+    background-color: #36332d;
+
+    border: 1px solid #d2a85a;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.museum-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    background-color: #d2a85a;
+
+    color: #222;
+
+    text-decoration: none;
+}

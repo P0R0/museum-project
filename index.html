@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARCHAEO MUSEUM</title>
+
+    <!-- 나중에 CSS 파일을 연결할 곳 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         상단 메뉴
+    =============================== -->
+    <header>
+        <div class="logo">
+            <h1>ARCHAEO MUSEUM</h1>
+            
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#exhibition">전시관</a></li>
+                <li><a href="#collection">유물 도감</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ==============================
+         메인 화면
+    =============================== -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+                <p class="small-title">INTERACTIVE ARCHAEOLOGY MUSEUM</p>
+
+                <h2>
+                    잠들어 있던<br>
+                    역사를 발견하세요.
+                </h2>
+
+                <p>
+                    고대의 유물과 유적을 탐험하고<br>
+                    미니게임을 통해 숨겨진 전시품을 해금해 보세요.
+                </p>
+
+                <a href="#exhibition" class="main-button">
+                    전시관 입장하기
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             전시관 소개
+        =============================== -->
+        <section id="exhibition" class="exhibition">
+
+            <div class="section-title">
+                <p>EXHIBITION</p>
+                <h2>현재 전시관</h2>
+                <p>
+                    시대별로 구성된 전시관에서
+                    다양한 유물과 유적을 만나보세요.
+                </p>
+            </div>
+
+
+            <!-- 전시관 카드 -->
+            <div class="museum-halls">
+
+                <article class="hall-card">
+                    <h3>제1전시관</h3>
+                    <p>선사시대</p>
+                    <span>고인돌 · 토기 · 석기</span>
+                    <button>입장하기</button>
+                </article>
+
+
+                <article class="hall-card">
+                    <h3>제2전시관</h3>
+                    <p>삼국시대</p>
+                    <span>백제 · 신라 · 고구려</span>
+                    <button>입장하기</button>
+                </article>
+
+
+                <article class="hall-card">
+                    <h3>제3전시관</h3>
+                    <p>고려·조선</p>
+                    <span>도자기 · 건축물 · 생활 유물</span>
+                    <button>입장하기</button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             유물 전시 카드
+        =============================== -->
+        <section id="collection" class="collection">
+
+            <div class="section-title">
+                <p>COLLECTION</p>
+                <h2>숨겨진 전시품</h2>
+                <p>
+                    잠겨 있는 전시품을 미니게임으로 해금해 보세요.
+                </p>
+            </div>
+
+
+            <div class="artifact-grid">
+
+                <!-- 유물 1 -->
+                <article class="artifact-card locked">
+
+                    <div class="artifact-image">
+                        <span>?</span>
+                    </div>
+
+                    <div class="artifact-info">
+
+                        <span class="status">🔒 미해금</span>
+
+                        <h3>빗살무늬 토기</h3>
+
+                        <p>
+                            시대 : 신석기 시대<br>
+                            용도 : ???
+                        </p>
+
+                        <a href="game-pottery.html" class="unlock-button">
+                            해금하기
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 유물 2 -->
+                <article class="artifact-card locked">
+
+                    <div class="artifact-image">
+                        <span>?</span>
+                    </div>
+
+                    <div class="artifact-info">
+                        <span class="status">🔒 미해금</span>
+
+                        <h3>???</h3>
+
+                        <p>
+                            시대 : ???<br>
+                            용도 : ???
+                        </p>
+
+                        <button class="unlock-button">
+                            해금하기
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 유물 3 -->
+                <article class="artifact-card locked">
+
+                    <div class="artifact-image">
+                        <span>?</span>
+                    </div>
+
+                    <div class="artifact-info">
+                        <span class="status">🔒 미해금</span>
+
+                        <h3>???</h3>
+
+                        <p>
+                            시대 : ???<br>
+                            용도 : ???
+                        </p>
+
+                        <button class="unlock-button">
+                            해금하기
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 유물 4 -->
+                <article class="artifact-card locked">
+
+                    <div class="artifact-image">
+                        <span>?</span>
+                    </div>
+
+                    <div class="artifact-info">
+                        <span class="status">🔒 미해금</span>
+
+                        <h3>???</h3>
+
+                        <p>
+                            시대 : ???<br>
+                            용도 : ???
+                        </p>
+
+                        <button class="unlock-button">
+                            해금하기
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             진행도
+        =============================== -->
+        <section class="progress-section">
+
+            <div class="section-title">
+                <p>YOUR COLLECTION</p>
+                <h2>나의 박물관 도감</h2>
+            </div>
+
+            <div class="progress-box">
+
+                <p>수집한 전시품</p>
+
+                <h3>
+                    <span>0</span> / 20
+                </h3>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <p class="progress-text">
+                    아직 발견하지 못한 유물이 있습니다.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         하단
+    =============================== -->
+    <footer>
+
+        <h2>ARCHAEO MUSEUM</h2>
+
+        <p>
+            Interactive Archaeology Museum
+        </p>
+
+        <p>
+            © 2026 ARCHAEO MUSEUM
+        </p>
+
+    </footer>
+
